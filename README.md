@@ -24,7 +24,7 @@
 		<h1>Randify</h1>
 		<nav>
 			<ul>
-				<a href="index.html">Home</a>
+				<a href="randify.html">🎵music🎵</a>
 				<a href="about.html">About</a>
 				<a href="contact.html">Contact</a>
 				<a href="blog.html">Blog</a>
