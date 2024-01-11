@@ -11,20 +11,22 @@
     };
 
     function checkAssociation() {
-      // Prompt the user to enter a word
-      const word = prompt("Enter a word:");
+      // Get the input value from the text box
+      const word = document.getElementById("wordInput").value;
 
       // Check if the word exists in the variables object
       if (word in variables) {
         const output = variables[word];
-        console.log(`The word '${word}' is associated with '${output}'.`);
+        document.getElementById("output").textContent = `The word '${word}' is associated with '${output}'.`;
       } else {
-        console.log(`Sorry, I don't have an association for the word '${word}'.`);
+        document.getElementById("output").textContent = `Sorry, I don't have an association for the word '${word}'.`;
       }
     }
   </script>
 </head>
 <body>
+  <input type="text" id="wordInput">
   <button onclick="checkAssociation()">Check Association</button>
+  <p id="output"></p>
 </body>
 </html>
