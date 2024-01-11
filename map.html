@@ -6,9 +6,8 @@
     // Define the variables and their associated values
     const variables = {
       "extended riverside loop": "4H.1B.1D.2D.3D.4D.1F.3R.2T.1H.2H.3H",
-      "extended ava loop": "4H.1B.1D.2D.3D.4D.1F.3R.2T.1H.2H.3H",
-      "4H.1B.1D.2D.3D.4D.1F.3R.2T.1H.2H.3H": "Extended Riverside Loop, & Extended Ava Loop",
-      cake: "dessert",
+      "4H.1B.1D.2D.3D.4D.1F.3R.2T.1H.2H.3H": "Extended Riverside Loop",
+      
     };
 
     function checkAssociation() {
@@ -18,9 +17,9 @@
       // Check if the word exists in the variables object
       if (word in variables) {
         const output = variables[word];
-        document.getElementById("output").textContent = `The word '${word}' is associated with '${output}'.`;
+        document.getElementById("output").textContent = `${word} is analogous to route ${output}.`;
       } else {
-        document.getElementById("output").textContent = `Sorry, I don't have an association for the word '${word}'.`;
+        document.getElementById("output").textContent = `This ${word} is not currently a route.`;
       }
     }
   </script>
